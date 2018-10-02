@@ -11,7 +11,9 @@ canvas {
   border: 1px solid black;
   display: block;
   margin: 15% auto;
-  background: white;
+  /* background: blue; */
+  background-image: url("https://pre00.deviantart.net/5e95/th/pre/f/2013/069/b/c/game_screen_background2_by_ubervestigium-d5xkmpv.png");
+  background-size: cover;
 }
 
 h1 {
