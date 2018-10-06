@@ -18,7 +18,7 @@ canvas {
 
 .shake {
   animation-name: shake;
-  animation-duration: 0.3s;
+  animation-duration: .3s;
 }
 
 h1 {
