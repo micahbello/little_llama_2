@@ -1,0 +1,62 @@
+.game-title {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 40px;
+  margin: 0 auto;
+  width: 312px;
+}
+
+.index-body {
+  height: 100vh;
+  background: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-middle-section {
+  display: flex;
+  justify-content: center;
+
+}
+
+.options-section  {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  margin-left: 15px;
+}
+
+.options-section button {
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+}
+
+.options-section button:hover, .play-link:hover {
+    background: black;
+}
+
+.play-link {
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  height: 100px;
+  border: 1px solid;
+  width: 100vw;
+}
