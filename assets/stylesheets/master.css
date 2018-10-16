@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightgray;
+}
+
+/* index-page */
+.game-page-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-section {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas-section {
+  height: 450px;
+  width: 750px;
+}
+
+canvas {
+  position: absolute;
+  height: 450px;
+  width: 750px;
+  border: 1px solid black;
+  display: block;
+  margin: 0px auto;
+  /* background: blue; */
+  /* background-image: url("https://pre00.deviantart.net/5e95/th/pre/f/2013/069/b/c/game_screen_background2_by_ubervestigium-d5xkmpv.png"); */
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.canvas-cover {
+  position: absolute;
+  height: 450px;
+  width: 750px;
+  /* border: solid black; */
+  /* margin: 0px auto; */
+  border-radius: 5px;
+  position: absolute;
+  /* margin: 0px auto; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: blue; */
+}
+
+.canvas-cover button {
+  width: 200px;
+  height: 70px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+}
+
+.mode-buttons-div {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* canvas-pages */
+.game-title {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 40px;
+  margin: 0 auto;
+  width: 312px;
+}
+
+.index-body {
+  height: 100vh;
+  background: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-middle-section {
+  display: flex;
+  justify-content: center;
+
+}
+
+.options-section  {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  margin-left: 15px;
+}
+
+.options-section button {
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+}
+
+.options-section button:hover, .play-link:hover {
+    background: black;
+}
+
+.play-link {
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+
+.mode-option-link {
+  width: 200px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+
+.mode-option-link:hover {
+  background: gainsboro;
+}
+
+.regular-llama-figure {
+  position: relative;
+  bottom: -10px;
+}
+
+.dressed-llama-figure {
+  position: relative;
+  bottom: -12px;
+}
+
+.normal-mode-description {
+  height: 150px;
+  border: 1px solid;
+}
+
+footer {
+  height: 100px;
+  border: 1px solid;
+  width: 100vw;
+}

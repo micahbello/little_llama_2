@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/stylesheets/master.css">
+    <link rel="stylesheet" href="./assets/stylesheets/animations.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Righteous" rel="stylesheet">
+
+    <title>Little Llama</title>
+  </head>
+  <body class="game-page-body">
+
+    <h1 class="game-title">Little Llama 2</h1>
+
+
+
+    <section class="game-section">
+      <div class="canvas-section">
+        <canvas id="canvas"></canvas>
+        <div class="canvas-cover">
+
+          <div class="mode-buttons-div">
+            <div class="normal-mode-link-and-llama">
+              <figure>
+                <img class="regular-llama-figure" src="./assets/page_images/single_llama.png" alt="">
+              </figure>
+              <a id="normal-link" class="mode-option-link" href="normal-mode-game.html">Normal Mode</a>
+            </div>
+
+            <div class="flight-mode-link-and-llama">
+              <figure>
+                <img class="dressed-llama-figure" src="./assets/page_images/single_llama_dressed.png" alt="">
+              </figure>
+              <a id="flight-link" class="mode-option-link" href="flight-mode-game.html">Flight Mode</a>
+            </div>
+          </div>
+
+          <div class="normal-mode-description">
+            <p>
+              The classic way of playing Little Llama. Little Llama jumps
+              on floating, moving platforms to accomplish his goal of reaching
+              the coins. The platforms offer cover from the bouncing pigs.
+              Pigs do not bounce off of each other.
+            </p>
+          </div>
+
+          <div class="flight-mode-description">
+            <p>
+              No platforms and no jumping. More like flying and gliding. This mode
+              is a little harder because there is nothing blocking the pigs.
+              The pigs bounce off of each other with realistic elastic collision
+              mechanics.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="./lib/bundle.js" charset="utf-8"></script>
+  </body>
+</html>

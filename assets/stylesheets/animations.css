@@ -1,75 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: lightgray;
-}
-
-.game-page-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.game-section {
-  display: flex;
-  justify-content: center;
-}
-
-.canvas-section {
-  height: 450px;
-  width: 750px;
-}
-
-canvas {
-  position: absolute;
-  height: 450px;
-  width: 750px;
-  border: 1px solid black;
-  display: block;
-  margin: 0px auto;
-  /* background: blue; */
-  /* background-image: url("https://pre00.deviantart.net/5e95/th/pre/f/2013/069/b/c/game_screen_background2_by_ubervestigium-d5xkmpv.png"); */
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.canvas-cover {
-  position: absolute;
-  height: 450px;
-  width: 750px;
-  border: solid black;
-  /* margin: 0px auto; */
-  border-radius: 5px;
-  position: absolute;
-  /* margin: 0px auto; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: blue;
-}
-
-.canvas-cover button {
-  width: 200px;
-  height: 70px;
-  margin-top: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: 'Righteous', cursive;
-}
-
-.mode-buttons-div {
-  width: 460px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .shake {
   animation-name: shake;
   animation-duration: .3s;
@@ -84,6 +12,13 @@ canvas {
   transform: rotateX(180deg);
 }
 
+.jumping {
+  animation: llama-jumping 3s ease-out infinite;
+}
+
+.flying {
+  animation: llama-flying 2s infinite;
+}
 
 /* Taken from https://www.w3schools.com/howto/howto_css_shake_image.asp */
 @keyframes shake {
@@ -113,4 +48,33 @@ canvas {
   80% { transform: translate(-1px, -1px) rotateX(180deg) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotateX(180deg) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotateX(180deg) rotate(-1deg); }
+}
+
+
+@keyframes llama-jumping {
+  0% { transform: translate(0px, 0px); }
+  10% { transform: translate(10px, -55px); }
+  20% { transform: translate(20px, 0px); }
+  30% { transform: translate(30px, -55px); }
+  40% { transform: translate(40px, 0px); }
+  50% { transform: translate(50px, -55px); }
+  60% { transform: translate(60px, 0px); }
+  70% { transform: translate(70px, -55px); }
+  80% { transform: translate(80px, 0px); }
+  90% { transform: translate(90px, -55px); }
+  100% { transform: translate(100px, 0px); }
+}
+
+@keyframes llama-flying {
+  0% { transform: translate(0px, 0px); }
+  /* 10% { transform: translate(0px, -10px); } */
+  /* 20% { transform: translate(0px, -20px); } */
+  /* 30% { transform: translate(0px, -30px); } */
+  /* 40% { transform: translate(0px, -40px); } */
+  50% { transform: translate(0px, -70px); }
+  /* 60% { transform: translate(0px, -70px); } */
+  /* 70% { transform: translate(20px, -70px); } */
+  /* 80% { transform: translate(40px, -70px); } */
+  /* 90% { transform: translate(70px, -75px); } */
+  100% { transform: translate(100px, -80px); }
 }
