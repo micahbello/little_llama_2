@@ -20,6 +20,10 @@
   animation: llama-flying 2s infinite;
 }
 
+.description-display {
+  animation: description-display .5s forwards;
+}
+
 /* Taken from https://www.w3schools.com/howto/howto_css_shake_image.asp */
 @keyframes shake {
 
@@ -67,14 +71,11 @@
 
 @keyframes llama-flying {
   0% { transform: translate(0px, 0px); }
-  /* 10% { transform: translate(0px, -10px); } */
-  /* 20% { transform: translate(0px, -20px); } */
-  /* 30% { transform: translate(0px, -30px); } */
-  /* 40% { transform: translate(0px, -40px); } */
-  50% { transform: translate(0px, -70px); }
-  /* 60% { transform: translate(0px, -70px); } */
-  /* 70% { transform: translate(20px, -70px); } */
-  /* 80% { transform: translate(40px, -70px); } */
-  /* 90% { transform: translate(70px, -75px); } */
-  100% { transform: translate(100px, -80px); }
+  70% { transform: translate(0px, -50px); }
+  100% { transform: translate(100px, -60px); }
+}
+
+@keyframes description-display {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-185px, 30px); }
 }

@@ -4,7 +4,8 @@
 }
 
 body {
-  background: lightgray;
+  background: white;
+  /* border: 3px solid; */
 }
 
 /* index-page */
@@ -16,9 +17,34 @@ body {
   align-items: center;
 }
 
+.fas.fa-volume-mute.fa-2x {
+  position: relative;
+  right: -367px;
+}
+
 .game-section {
+  width: 100%;
+  min-width: 1250px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.choose-mode-text {
+  height: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 143px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: 20px;
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+  font-family: 'Caveat Brush', cursive;
 }
 
 .canvas-section {
@@ -69,14 +95,17 @@ canvas {
   width: 460px;
   display: flex;
   justify-content: space-between;
+  margin-top: 130px;
 }
 
 /* canvas-pages */
 .game-title {
-  font-family: 'Fascinate Inline', cursive;
+  font-family: 'Rammetto One', cursive;
   font-size: 40px;
   margin: 0 auto;
-  width: 312px;
+  width: 341px;
+  /* border: 2px solid; */
+  margin-bottom: 15px;
 }
 
 .index-body {
@@ -109,11 +138,12 @@ canvas {
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Architects Daughter', cursive;
+
 }
 
 .options-section button:hover, .play-link:hover {
-    background: black;
+  background: black;
 }
 
 .play-link {
@@ -123,7 +153,7 @@ canvas {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Architects Daughter', cursive;
   background: white;
   text-decoration: none;
   color: black;
@@ -137,7 +167,7 @@ canvas {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Sigmar One', cursive;
   background: white;
   text-decoration: none;
   color: black;
@@ -150,20 +180,142 @@ canvas {
 .regular-llama-figure {
   position: relative;
   bottom: -10px;
+  z-index: 2;
 }
 
 .dressed-llama-figure {
   position: relative;
   bottom: -12px;
+  z-index: 2;
 }
 
-.normal-mode-description {
-  height: 150px;
+.mode-descriptions {
+  position: : absolute;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+.mode-descriptions img {
+  position: relative;
+  bottom: -29px;
+}
+
+.normal-mode-description, .flight-mode-description {
+  /* font-size: 20px;
   border: 1px solid;
+  border-radius: 5px; */
+  position: absolute;
+  width: 370px;
+  display: none;
+  height: 165px;
+  margin-top: -58px;
+}
+
+.normal-mode-description p, .flight-mode-description p {
+  font-size: 25px;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  background:rgba(255,255,255, 0.7);
+}
+
+
+
+.normal-mode-link-and-llama {
+  margin-top: 3px;
+}
+
+.middle-sides {
+  width: 250px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Capriola', sans-serif;
+  min-height: 450px;
+}
+
+.right-panel-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel-buttons button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Sigmar One', cursive;
+  background: white;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.move-commands {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+}
+
+
+.move-commands i {
+  margin-left: 10px;
+}
+
+.weapon-commands {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weapon-commands h4 {
+  font-size: 18px;
+}
+
+.weapon-commands li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weapon-list-commands {
+  margin-top: 5px;
+}
+
+.weapon-list-commands span {
+  font-size: 15px;
 }
 
 footer {
-  height: 100px;
+  /* height: 100px;
   border: 1px solid;
-  width: 100vw;
+  width: 100vw; */
+  border: 1px solid;
+  margin-top: 30px;
+
+}
+
+footer figure {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+}
+
+footer figure i {
+  color: black;
+  /* margin: 5px; */
+}
+
+footer figure i:hover {
+  color: gainsboro;
+}
+
+footer span {
+  font-family: 'Gochi Hand', cursive;
 }

@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="./assets/stylesheets/master.css">
     <link rel="stylesheet" href="./assets/stylesheets/animations.css">
 
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bowlby+One+SC|Capriola|Caveat+Brush|Fascinate+Inline|Gochi+Hand|Rammetto+One|Righteous|Sigmar+One" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <title>Little Llama</title>
   </head>
@@ -15,9 +15,38 @@
 
     <h1 class="game-title">Little Llama 2</h1>
 
+      <section class="mode-descriptions">
+        <div class="normal-mode-description">
+          <img src="./assets/page_images/pig_alone.png"  alt="">
+          <p>
+            The classic way of playing Little Llama. Little Llama jumps
+            on floating, moving platforms to accomplish his goal of reaching
+            the coins. The platforms offer cover from the bouncing pigs.
+            Pigs do not bounce off each other.
+          </p>
+        </div>
 
+        <div class="flight-mode-description">
+          <img src="./assets/page_images/pig_alone.png"  alt="">
+            <p>
+              No platforms and no jumping. More like flying and gliding. This mode
+              is a little harder because there is nothing blocking the pigs.
+              The pigs bounce off each other with realistic elastic collision
+              mechanics.
+            </p>
+      </div>
+    </section>
+
+    <i class="fas fa-volume-mute fa-2x"></i>
 
     <section class="game-section">
+      <span class="choose-mode-text">Choose Mode</span>
+
+      <section class="middle-sides">
+        <h3>Poop</h3>
+      </section>
+
+
       <div class="canvas-section">
         <canvas id="canvas"></canvas>
         <div class="canvas-cover">
@@ -37,28 +66,56 @@
               <a id="flight-link" class="mode-option-link" href="flight-mode-game.html">Flight Mode</a>
             </div>
           </div>
-
-          <div class="normal-mode-description">
-            <p>
-              The classic way of playing Little Llama. Little Llama jumps
-              on floating, moving platforms to accomplish his goal of reaching
-              the coins. The platforms offer cover from the bouncing pigs.
-              Pigs do not bounce off of each other.
-            </p>
-          </div>
-
-          <div class="flight-mode-description">
-            <p>
-              No platforms and no jumping. More like flying and gliding. This mode
-              is a little harder because there is nothing blocking the pigs.
-              The pigs bounce off of each other with realistic elastic collision
-              mechanics.
-            </p>
-          </div>
-
         </div>
       </div>
+
+      <section class="middle-sides">
+
+        <h3>Controls</h3>
+
+        <div class="controls">
+          <div class="move-commands">
+            <span>Move: </span>
+            <i class="fas fa-caret-left fa-2x"></i>
+            <i class="fas fa-caret-right fa-2x"></i>
+            <i class="fas fa-caret-up fa-2x"></i>
+            <i class="fas fa-caret-down fa-2x"></i>
+          </div>
+
+          <div class="weapon-commands">
+            <!-- <h4>Weapons:</h4> -->
+
+            <div class="weapon-list-commands">
+              <li>SHIFT: <span>toggle weapons</span></li>
+              <li>SPACEBAR: <span>activate weapon</span></li>
+              <li>ESC: <span>discard weapon</span></li>
+            </div>
+
+
+          </div>
+        </div>
+
+        <span>Press 'P' to pause</span>
+
+        <div class="right-panel-buttons">
+          <button type="button" name="button">HOW TO PLAY</button>
+          <button type="button" name="button">RESTART</button>
+          <button type="button" name="button">PAUSE</button>
+        </div>
+
+      </section>
+
     </section>
+
+    <footer>
+      <figure className= "footer-icons">
+        <a href="https://github.com/micahbello"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/miqueasbello/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="http://www.micahbello.com"><i class="fas fa-address-card fa-2x"></i></a>
+      </figure>
+
+      <span>beautifully coded by Miqueas Bello</span>
+    </footer>
 
     <script src="./lib/bundle.js" charset="utf-8"></script>
   </body>
