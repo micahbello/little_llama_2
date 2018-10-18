@@ -4,7 +4,8 @@
 }
 
 body {
-  background: #ccf2ff;
+  background: #FFFFF0;
+  min-height: 660px;
   /* border: 3px solid; */
 }
 
@@ -16,11 +17,32 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.fas.fa-volume-mute.fa-2x {
+/*
+.fas.fa-volume-mute.fa-2x, .fas.fa-volume-up.fa-2x {
   position: relative;
-  right: -367px;
+  right: -355px;
+} */
+
+#sound-button-off, #sound-button-on {
+  position: relative;
+  right: -260px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Capriola', sans-serif;
 }
+
+#sound-button-off {
+  display: flex;
+}
+
+#sound-button-on {
+  display: none;
+}
+
+#sound-button-off i, #sound-button-on i {
+  margin-left: 10px;
+}
+
 
 .game-section {
   width: 100%;
@@ -53,15 +75,15 @@ body {
 }
 
 .instructions-section {
-  border: 1px solid;
-  height: 200px;
+  /* border: 1px solid; */
+  /* height: 200px; */
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .choose-mode-text {
-  height: 40px;
+  /* height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +96,7 @@ body {
   position: absolute;
   top: 150px;
   z-index: 1;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Capriola', sans-serif; */
   /* font-family: 'Caveat Brush', cursive; */
 }
 
@@ -210,7 +232,7 @@ canvas {
 }
 
 .mode-option-button:hover {
-  background: gainsboro;
+  background: lightgrey;
 }
 
 .regular-llama-figure {
@@ -234,7 +256,7 @@ canvas {
 
 .mode-descriptions img {
   position: relative;
-  bottom: -29px;
+  bottom: -30px;
 }
 
 .normal-mode-description, .flight-mode-description {
@@ -245,7 +267,7 @@ canvas {
   width: 370px;
   display: none;
   height: 165px;
-  margin-top: -58px;
+  margin-top: -40px;
 }
 
 .normal-mode-description p, .flight-mode-description p {
@@ -290,6 +312,11 @@ canvas {
   text-decoration: none;
   color: black;
   margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.right-panel-buttons button:hover {
+  background: lightgrey;
 }
 
 .move-commands {
@@ -324,7 +351,8 @@ canvas {
 .weapon-list-commands {
   margin-top: 5px;
   border: 1px solid;
-  background: lightgray;
+  border-radius: 5px;
+  background: #99ddff;
   padding: 10px 5px 0px 5px;
   /* display: flex;
   flex-direction: column;
@@ -356,7 +384,7 @@ footer figure i {
 }
 
 footer figure i:hover {
-  color: gainsboro;
+  color: lightgrey;
 }
 
 footer span {
