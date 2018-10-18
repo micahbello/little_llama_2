@@ -79,8 +79,12 @@ body {
   /* height: 200px; */
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 
 .choose-mode-text {
   /* height: 40px;
