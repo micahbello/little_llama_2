@@ -159,6 +159,7 @@ canvas {
   width: 341px;
   /* border: 2px solid; */
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .index-body {
