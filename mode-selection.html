@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="./assets/stylesheets/master.css">
     <link rel="stylesheet" href="./assets/stylesheets/animations.css">
 
-<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bowlby+One+SC|Capriola|Caveat+Brush|Fascinate+Inline|Gochi+Hand|Rammetto+One|Righteous|Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Bhaina|Bowlby+One+SC|Capriola|Caveat+Brush|Fascinate+Inline|Gochi+Hand|Palanquin+Dark|Rammetto+One|Righteous|Sigmar+One" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
@@ -40,30 +41,43 @@
     <i class="fas fa-volume-mute fa-2x"></i>
 
     <section class="game-section">
-      <span class="choose-mode-text">Choose Mode</span>
 
       <section class="middle-sides">
-        <h3>Poop</h3>
+        <div class="current-stats-section">
+          <h3>Current Stats</h3>
+
+          <ul>
+            <li><img class="current-heart" src="./assets/page_images/heart_alone.png" alt=""><span id="current-heart-count">3</span></li>
+            <li><img class="current-coin" src="./assets/page_images/coin_alone.png" alt=""><span id="current-coin-count">3</span></li>
+            <li><img class="current-bacon" src="./assets/sprites/other_objects/bacon.png" alt=""><span id="current-bacon-count">3 (total)</span></li>
+            <li id="current-mode">Mode: </li>
+          </ul>
+        </div>
+
+        <div class="instructions-section">
+          <h3>Quick Tips</h3>
+        </div>
       </section>
 
 
       <div class="canvas-section">
         <canvas id="canvas"></canvas>
         <div class="canvas-cover">
+          <span class="choose-mode-text">Choose Mode</span>
 
           <div class="mode-buttons-div">
             <div class="normal-mode-link-and-llama">
               <figure>
                 <img class="regular-llama-figure" src="./assets/page_images/single_llama.png" alt="">
               </figure>
-              <a id="normal-link" class="mode-option-link" href="normal-mode-game.html">Normal Mode</a>
+              <button id="normal-button" class="mode-option-button" type="button" name="button">NORMAL MODE</button>
             </div>
 
             <div class="flight-mode-link-and-llama">
               <figure>
                 <img class="dressed-llama-figure" src="./assets/page_images/single_llama_dressed.png" alt="">
               </figure>
-              <a id="flight-link" class="mode-option-link" href="flight-mode-game.html">Flight Mode</a>
+              <button id="flight-button" class="mode-option-button" type="button" name="button">FLIGHT MODE</button>
             </div>
           </div>
         </div>
@@ -100,7 +114,7 @@
         <div class="right-panel-buttons">
           <button type="button" name="button">HOW TO PLAY</button>
           <button type="button" name="button">RESTART</button>
-          <button type="button" name="button">PAUSE</button>
+          <button id="pause-button" type="button" name="button">PAUSE</button>
         </div>
 
       </section>
