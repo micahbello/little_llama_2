@@ -12,6 +12,21 @@
 
     <link rel="icon" href="./assets/page_images/single_llama_dressed.png">
 
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA__9fBXN-yION7dqOfWVjg1AbDPUYqKqI",
+        authDomain: "little-llama-2.firebaseapp.com",
+        databaseURL: "https://little-llama-2.firebaseio.com",
+        projectId: "little-llama-2",
+        storageBucket: "little-llama-2.appspot.com",
+        messagingSenderId: "713125961064"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <title>Little Llama 2</title>
   </head>
   <body class="game-page-body">
@@ -46,7 +61,7 @@
     <section class="game-section">
 
       <section class="middle-sides">
-        <div class="current-stats-section">
+        <div id="current-stats" class="current-stats-section">
           <h3>Current Stats</h3>
 
           <ul>
@@ -57,7 +72,7 @@
           </ul>
         </div>
 
-        <div class="instructions-section">
+        <div class="tips-section">
           <h3>Quick Tips</h3>
 
             <figure>
@@ -72,6 +87,24 @@
 
 
       <div class="canvas-section">
+
+        <div id="landing" class="landing">
+          <section class="index-middle-section">
+            <figure class="landing-page-llama-image">
+              <img src="./assets/page_images/llama_face.jpg" alt="Llama head">
+            </figure>
+
+            <section class="options-section">
+
+              <button id="landing-play-button" href="mode-selection.html">PLAY</button>
+
+              <button id="landing-how-play-button" type="button" name="button">HOW TO PLAY</button>
+
+            </section>
+
+          </section>
+        </div>
+
         <canvas id="canvas"></canvas>
         <div class="canvas-cover">
           <span class="choose-mode-text"></span>
@@ -91,14 +124,16 @@
               <button id="flight-button" class="mode-option-button" type="button" name="button">FLIGHT MODE</button>
             </div>
           </div>
+
         </div>
+
       </div>
 
       <section class="middle-sides">
 
-        <h3>Controls</h3>
 
         <div class="controls">
+          <h3>Controls</h3>
           <div class="move-commands">
             <span>Move: </span>
             <i class="fas fa-caret-left fa-2x"></i>
@@ -120,13 +155,17 @@
           </div>
         </div>
 
-        <span>Press 'P' to pause</span>
+        <div id="instruction-buttons" class="instruction-buttons">
 
-        <div class="right-panel-buttons">
-          <!-- <button type="button" name="button">HOW TO PLAY</button> -->
-          <button id="restart-button" type="button" name="button">RESTART</button>
-          <button id="pause-button" type="button" name="button">PAUSE</button>
+          <span>Press 'P' to pause</span>
+
+          <div class="right-panel-buttons">
+            <!-- <button type="button" name="button">HOW TO PLAY</button> -->
+            <button id="restart-button" type="button" name="button">RESTART</button>
+            <button id="pause-button" type="button" name="button">PAUSE</button>
+          </div>
         </div>
+
 
       </section>
 

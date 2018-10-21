@@ -11,11 +11,11 @@ body {
 
 /* index-page */
 .game-page-body {
-  height: 100vh;
-  display: flex;
+  /* height: 100vh; */
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 /*
 .fas.fa-volume-mute.fa-2x, .fas.fa-volume-up.fa-2x {
@@ -25,7 +25,7 @@ body {
 
 #sound-button-off, #sound-button-on {
   position: relative;
-  right: -260px;
+  margin-left: 522px;
   justify-content: center;
   align-items: center;
   font-family: 'Capriola', sans-serif;
@@ -53,7 +53,7 @@ body {
 }
 
 .current-stats-section {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   /* border: 1px solid; */
@@ -74,7 +74,7 @@ body {
   width: 23%;
 }
 
-.instructions-section {
+.tips-section {
   /* border: 1px solid; */
   /* height: 200px; */
   width: 100%;
@@ -178,16 +178,29 @@ canvas {
 .index-middle-section {
   display: flex;
   justify-content: center;
+  border-radius: 5px;
+  /* background: black; */
+}
 
+.landing {
+  position: absolute;
+  z-index: 3;
+}
+
+.landing-page-llama-image img {
+  width: 101%;
 }
 
 .options-section  {
-  border: 1px solid;
+  background: #FFFFF0;
+  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 200px;
-  margin-left: 15px;
+  align-items: center;
+  width: 299px;
+  height: 452px;
+  margin-left: 4px;
 }
 
 .options-section button {
@@ -196,12 +209,12 @@ canvas {
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
-  font-family: 'Architects Daughter', cursive;
-
+  font-family: 'Baloo Bhaina', cursive;
+  width: 75%
 }
 
-.options-section button:hover, .play-link:hover {
-  background: black;
+.options-section button:hover {
+  background: lightgrey;
 }
 
 .play-link {
@@ -253,10 +266,11 @@ canvas {
 }
 
 .mode-descriptions {
-  position: : absolute;
   z-index: 1;
   text-align: center;
   font-family: 'Caveat Brush', cursive;
+  position: relative;
+  margin-left: 650px;
 }
 
 .mode-descriptions img {
@@ -324,6 +338,10 @@ canvas {
   background: lightgrey;
 }
 
+.controls h3 {
+  text-align: center;
+}
+
 .move-commands {
   display: flex;
   justify-content: center;
@@ -368,16 +386,25 @@ canvas {
   font-size: 15px;
 }
 
+.instruction-buttons {
+  display: none;
+  text-align: center;
+}
+
 footer {
   /* height: 100px;
   border: 1px solid;
   width: 100vw; */
   /* border: 1px solid; */
   margin-top: 30px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer figure {
+  width: 20%;
   display: flex;
   justify-content: space-around;
   /* border: 1px solid; */
