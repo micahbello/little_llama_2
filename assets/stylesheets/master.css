@@ -57,7 +57,10 @@ body {
   display: none;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid; */
+  border: 1px solid;
+  border-radius: 5px;
+  background: gainsboro;
+  padding: 10px 0px;
 }
 
 .current-stats-section li {
@@ -318,12 +321,12 @@ canvas {
   min-height: 450px;
 }
 
-.right-panel-buttons {
+.left-panel-buttons {
   display: flex;
   flex-direction: column;
 }
 
-.right-panel-buttons button {
+.left-panel-buttons button {
   width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -339,7 +342,7 @@ canvas {
   cursor: pointer;
 }
 
-.right-panel-buttons button:hover {
+.left-panel-buttons button:hover {
   background: lightgrey;
 }
 
@@ -391,12 +394,16 @@ canvas {
   font-size: 15px;
 }
 
+.controls span {
+  margin-top: 10px;
+}
+
 .instruction-buttons {
   display: none;
   text-align: center;
 }
 
-footer {
+.page-footer {
   /* height: 100px;
   border: 1px solid;
   width: 100vw; */
@@ -408,22 +415,22 @@ footer {
   flex-direction: column;
 }
 
-footer figure {
+.page-footer figure {
   width: 20%;
   display: flex;
   justify-content: space-around;
   /* border: 1px solid; */
 }
 
-footer figure i {
+.page-footer figure i {
   color: black;
   /* margin: 5px; */
 }
 
-footer figure i:hover {
+.page-footer figure i:hover {
   color: lightgrey;
 }
 
-footer span {
+.page-footer span {
   font-family: 'Gochi Hand', cursive;
 }

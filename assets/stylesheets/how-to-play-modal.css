@@ -1,0 +1,94 @@
+.how-to-play-modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-to-play-modal header {
+  font-family: 'Rammetto One', cursive;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.how-slide-1, .how-slide-2 {
+  width: 560px;
+  max-width: 560px;
+  height: 570px;
+  border-radius: 4px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.how-to-content {
+  height: 430px;
+  padding: 0px 20px;
+  font-family: 'Capriola', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.how-to-content p {
+  text-align: center;
+}
+
+.how-to-content figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-to-content figure img {
+  width: 90%;
+}
+
+.how-slide-2 footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+.how-slide-2 footer button {
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Baloo Bhaina', cursive;
+  background: #99ddff;
+  margin: 0px 10px;
+}
+
+.how-slide-2 footer button:hover {
+  background: lightgrey;
+}
+
+/* slide2 */
+
+.how-slide-2 ul li {
+  list-style: none;
+}
+
+.how-slide-2-blast-icon {
+  width: 10%;
+}
+
+.how-slide-2-bubble-icon {
+  width: 11%;
+}
+
+.how-slide-2-hourglass-icon {
+  width: 9%;
+}

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    Content-Security-Policy: allow 'self'; img-src data: <<http://www.micahbello.com/little_llama_2/>>
-
     <meta charset="utf-8">
     <link rel="stylesheet" href="./assets/stylesheets/master.css">
+    <link rel="stylesheet" href="./assets/stylesheets/how-to-play-modal.css">
     <link rel="stylesheet" href="./assets/stylesheets/animations.css">
 
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Bhaina|Bowlby+One+SC|Capriola|Caveat+Brush|Fascinate+Inline|Gochi+Hand|Palanquin+Dark|Rammetto+One|Righteous|Sigmar+One" rel="stylesheet">
@@ -76,12 +75,11 @@
 
         <div id="instruction-buttons" class="instruction-buttons">
 
-          <span>Press 'P' to pause</span>
-
-          <div class="right-panel-buttons">
+          <div class="left-panel-buttons">
             <!-- <button type="button" name="button">HOW TO PLAY</button> -->
-            <button id="restart-button" type="button" name="button">RESTART</button>
             <button id="pause-button" type="button" name="button">PAUSE</button>
+            <button id="restart-button" type="button" name="button">RESTART</button>
+            <button id="pause-button" type="button" name="button">HOW TO PLAY</button>
           </div>
         </div>
 
@@ -100,9 +98,9 @@
 
               <button id="landing-play-button">PLAY</button>
 
-              <!-- <button id="landing-how-play-button" type="button" name="button">HOW TO PLAY</button>
+              <button id="landing-how-play-button" type="button" name="button">HOW TO PLAY</button>
 
-              <button id="landing-how-play-button" type="button" name="button">play the original</button> -->
+              <button id="landing-how-play-button" type="button" name="button">play the original</button>
 
 
             </section>
@@ -156,11 +154,15 @@
               <li>DELETE: <span>discard weapon</span></li>
             </div>
 
+            <span>Press 'P' to pause</span>
 
           </div>
         </div>
 
         <div class="tips-section">
+          <figure>
+            <img src="./assets/sprites/other_objects/coin_icon.png" alt="">
+          </figure>
           <h3>Quick Tips</h3>
 
             <figure>
@@ -176,7 +178,7 @@
 
     </section>
 
-    <footer>
+    <footer class="page-footer">
       <figure className= "footer-icons">
         <a href="https://github.com/micahbello"><i class="fab fa-github fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/miqueasbello/"><i class="fab fa-linkedin-in fa-2x"></i></a>
@@ -185,6 +187,81 @@
 
       <span>beautifully coded by Miqueas Bello</span>
     </footer>
+
+<!-- modal -->
+    <div class="how-to-play-modal">
+
+<!-- slide 1 -->
+      <!-- <div class="how-slide-1">
+        <header>
+          <h2>How to Play</h2>
+        </header>
+
+        <div class="how-to-content">
+          <h3>The Objective</h3>
+
+          <p>Collect as many coins as possible before
+            running out of hearts. A heart is lost every time Llama collides
+            with a pesky bouncing pig. Hearts can be gained by collecting
+            them when they appear bouncing in the game.
+          </p>
+
+          <figure>
+            <img src="./assets/gifs/llama-pig-heart-collision-demo.gif" alt="">
+          </figure>
+
+        </div>
+
+        <footer>
+          <button type="button" name="button">next</button>
+        </footer>
+
+      </div> -->
+
+<!-- slide2 -->
+      <div class="how-slide-2">
+        <header>
+          <h2>How to Play</h2>
+        </header>
+
+        <div class="how-to-content">
+          <h3>Weapons</h3>
+
+          <p>Collect different weapons. You can have three equipped
+            weapons at a time. Press "SHIFT" to toggle between them.
+            Press "DELETE" to discard a toggled weapon. Press
+            "SPACEBAR" to activate a weapon.
+          </p>
+
+          <ul>
+            <img class="how-slide-2-blast-icon" src="./assets/sprites/weapon_related/forcefield_blast_icon.png" alt="">
+            <li><b>Force Field Blast</b> - shoots a short, quick blast that kills any pig within its circumference</li>
+            <img class="how-slide-2-bubble-icon"
+            src="./assets/sprites/weapon_related/bubble.png" alt="">
+            <li><b>Bubble Shield</b> - temporary protection from pigs</li>
+            <img class="how-slide-2-hourglass-icon"
+            src="./assets/sprites/weapon_related/hourglass.png" alt="">
+            <li><b>Time Controller</b> - temporary super speed while the world
+            slows down</li>
+          </ul>
+
+
+          <figure>
+            <!-- <img src="./assets/gifs/llama-pig-heart-collision-demo.gif" alt=""> -->
+          </figure>
+
+        </div>
+
+        <footer>
+          <button type="button" name="button">previous</button>
+          <button type="button" name="button">next</button>
+        </footer>
+
+      </div>
+
+<!-- slide3 -->
+    </div>
+<!-- modal^ -->
 
     <script src="./lib/bundle.js" charset="utf-8"></script>
   </body>
