@@ -71,13 +71,17 @@ body {
   margin-left: 10px;
 }
 
+#left-side-panel {
+  display: none;
+}
+
 .current-bacon {
   width: 23%;
 }
 
 .tips-section {
   /* border: 1px solid; */
-  /* height: 200px; */
+  height: 160px;
   width: 100%;
   display: flex;
   flex-direction: column;
