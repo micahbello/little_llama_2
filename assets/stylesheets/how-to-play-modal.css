@@ -18,7 +18,7 @@
   padding-top: 20px;
 }
 
-.how-slide-1, .how-slide-2 {
+.how-slide-1, .how-slide-2, .how-slide-3{
   width: 560px;
   max-width: 560px;
   height: 570px;
@@ -52,7 +52,9 @@
   width: 90%;
 }
 
-.how-slide-2 footer {
+/* slide2 */
+
+.how-slide-1 footer, .how-slide-2 footer, .how-slide-3 footer {
   height: 70px;
   display: flex;
   justify-content: center;
@@ -60,7 +62,7 @@
   /* border: 1px solid; */
 }
 
-.how-slide-2 footer button {
+.how-slide-1 footer button, .how-slide-2 footer button, .how-slide-3 footer button {
   height: 50px;
   width: 100px;
   border-radius: 5px;
@@ -74,8 +76,6 @@
 .how-slide-2 footer button:hover {
   background: lightgrey;
 }
-
-/* slide2 */
 
 .how-slide-2 ul li {
   list-style: none;
@@ -91,4 +91,10 @@
 
 .how-slide-2-hourglass-icon {
   width: 9%;
+}
+
+/* slide3  */
+
+.how-slide-3-pig {
+  width: 1%;
 }
