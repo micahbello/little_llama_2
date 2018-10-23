@@ -451,3 +451,10 @@ canvas {
 .page-footer span {
   font-family: 'Gochi Hand', cursive;
 }
+
+.play-original-link {
+  margin-top: 16px;
+  color: black;
+  font-size: 17px;
+  font-family: 'Capriola', sans-serif;
+}
