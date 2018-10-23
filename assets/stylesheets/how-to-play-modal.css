@@ -6,7 +6,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.8);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -18,15 +18,19 @@
   padding-top: 20px;
 }
 
-.how-slide-1, .how-slide-2, .how-slide-3{
+.how-slide {
+  position: absolute;
   width: 560px;
   max-width: 560px;
   height: 570px;
   border-radius: 4px;
   background: white;
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
+
+  animation-name: slide-in-display;
+  animation-duration: .5s;
 }
 
 .how-to-content {
@@ -48,13 +52,11 @@
   justify-content: center;
 }
 
-.how-to-content figure img {
+.slide-1-figure img {
   width: 90%;
 }
 
-/* slide2 */
-
-.how-slide-1 footer, .how-slide-2 footer, .how-slide-3 footer {
+.how-slide footer {
   height: 70px;
   display: flex;
   justify-content: center;
@@ -62,7 +64,7 @@
   /* border: 1px solid; */
 }
 
-.how-slide-1 footer button, .how-slide-2 footer button, .how-slide-3 footer button {
+.how-slide footer button {
   height: 50px;
   width: 100px;
   border-radius: 5px;
@@ -73,11 +75,12 @@
   margin: 0px 10px;
 }
 
-.how-slide-2 footer button:hover {
+.how-slide footer button:hover {
   background: lightgrey;
 }
 
-.how-slide-2 ul li {
+/* slide 2 specific */
+.how-slide-2-ul li {
   list-style: none;
 }
 
@@ -93,8 +96,53 @@
   width: 9%;
 }
 
-/* slide3  */
+/* slide 3 specific  */
 
 .how-slide-3-pig {
-  width: 1%;
+  width: 15%;
+}
+
+.how-slide-3-bacon {
+  width: 15%;
+}
+
+.how-slide-3-heart {
+  width: 10%;
+}
+
+.slide-out {
+  animation-name: slide-out-display;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.slide-back-from-center {
+  animation-name: slide-back-from-center-display;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.slide-back-from-left {
+  animation-name: slide-back-from-left-display;
+  animation-duration: .5s;
+}
+
+@keyframes slide-out-display {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-2000px);}
+}
+
+@keyframes slide-in-display {
+  0% {transform: translateX(2000px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes slide-back-from-center-display {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(2000px);}
+}
+
+@keyframes slide-back-from-left-display {
+  0% {transform: translateX(-2000px);}
+  100% {transform: translateX(0px);}
 }

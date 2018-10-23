@@ -14,8 +14,8 @@
     <link rel="icon" href="./assets/page_images/single_llama_dressed.png">
 
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-    <script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script> -->
+    <!-- <script>
       // Initialize Firebase
       var config = {
         apiKey: "AIzaSyA__9fBXN-yION7dqOfWVjg1AbDPUYqKqI",
@@ -26,7 +26,7 @@
         messagingSenderId: "713125961064"
       };
       firebase.initializeApp(config);
-    </script>
+    </script> -->
 
     <title>Little Llama 2</title>
   </head>
@@ -79,7 +79,7 @@
             <!-- <button type="button" name="button">HOW TO PLAY</button> -->
             <button id="pause-button" type="button" name="button">PAUSE</button>
             <button id="restart-button" type="button" name="button">RESTART</button>
-            <button id="pause-button" type="button" name="button">HOW TO PLAY</button>
+            <button id="how-to-play-button2" type="button" name="button">HOW TO PLAY</button>
           </div>
         </div>
 
@@ -98,9 +98,9 @@
 
               <button id="landing-play-button">PLAY</button>
 
-              <!-- <button id="landing-how-play-button" type="button" name="button">HOW TO PLAY</button>
+              <button id="landing-how-play-button" type="button" name="button">HOW TO PLAY</button>
 
-              <button id="landing-how-play-button" type="button" name="button">play the original</button> -->
+              <button id="landing-how-play-button" type="button" name="button">play the original</button>
 
 
             </section>
@@ -189,10 +189,10 @@
     </footer>
 
 <!-- modal -->
-    <!-- <div class="how-to-play-modal"> -->
+    <div id="how-to-modal" class="how-to-play-modal">
 
-<!-- slide 1 -->
-      <!-- <div class="how-slide-1">
+<!-- slide1 -->
+      <div id="slide1" class="how-slide">
         <header>
           <h2>How to Play</h2>
         </header>
@@ -206,20 +206,20 @@
             them when they appear bouncing in the game.
           </p>
 
-          <figure>
+          <figure class= "slide-1-figure">
             <img src="./assets/gifs/llama-pig-heart-collision-demo.gif" alt="">
           </figure>
 
         </div>
 
         <footer>
-          <button type="button" name="button">next</button>
+          <button id="slide1-next-button" type="button" name="button">next</button>
         </footer>
 
-      </div> -->
+      </div>
 
 <!-- slide2 -->
-      <!-- <div class="how-slide-2">
+      <div id="slide2" class="how-slide">
         <header>
           <h2>How to Play</h2>
         </header>
@@ -233,7 +233,7 @@
             "SPACEBAR" to activate a weapon.
           </p>
 
-          <ul>
+          <ul class="how-slide-2-ul">
             <img class="how-slide-2-blast-icon" src="./assets/sprites/weapon_related/forcefield_blast_icon.png" alt="">
             <li><b>Force Field Blast</b> - shoots a short, quick blast that kills any pig within its circumference</li>
             <img class="how-slide-2-bubble-icon"
@@ -248,20 +248,20 @@
         </div>
 
         <footer>
-          <button type="button" name="button">previous</button>
-          <button type="button" name="button">next</button>
+          <button id="slide2-previous-button" type="button" name="button">previous</button>
+          <button id="slide2-next-button" type="button" name="button">next</button>
         </footer>
 
-      </div> -->
+      </div>
 
 <!-- slide3 -->
-      <!-- <div class="how-slide-3">
+      <div id="slide3" class="how-slide">
         <header>
           <h2>How to Play</h2>
         </header>
 
         <div class="how-to-content">
-          <h3>Other Important Things</h3>
+          <h3>Pigs, Bacons, and Hearts</h3>
 
           <p>
             If you use a weapon on a pig, it will turn to bacon. Collect 5 bacons and
@@ -276,17 +276,49 @@
             <img class="how-slide-3-heart" src="./assets/page_images/heart_alone.png" alt="">
           </figure>
 
+          <figure class= "slide-1-figure">
+            <img src="./assets/gifs/llama-weapon-use-demo.gif" alt="">
+          </figure>
+
         </div>
 
         <footer>
-          <button type="button" name="button">previous</button>
-          <button type="button" name="button">next</button>
+          <button id="slide3-previous-button" type="button" name="button">previous</button>
+          <button id="slide3-next-button" type="button" name="button">next</button>
         </footer>
 
-      </div> -->
+      </div>
+
 <!-- slide4 -->
-    <!-- </div> -->
-<!-- modal^ -->
+      <div id="slide4" class="how-slide">
+        <header>
+          <h2>How to Play</h2>
+        </header>
+
+        <div class="how-to-content">
+          <h3>Flight Mode</h3>
+
+          <p>
+            You can choose to play in <i>Flight Mode</i>. There are no platforms. Llama glides
+            to get the coins. The behavior of some objects are different in this mode. Have fun!
+          </p>
+
+          <figure class= "slide-1-figure">
+            <img src="./assets/gifs/llama-flight-demo.gif" alt="">
+          </figure>
+
+        </div>
+
+        <footer>
+          <button id="slide4-previous-button" type="button" name="button">previous</button>
+          <button id="slide4-finish-button" type="button" name="button">Finish</button>
+        </footer>
+
+      </div>
+
+    </div>
+
+<!-- modal -->
 
     <script src="./lib/bundle.js" charset="utf-8"></script>
   </body>
