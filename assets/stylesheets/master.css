@@ -1,9 +1,3 @@
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* to center */
 body {
   background: #FFFFF0;
@@ -26,6 +20,10 @@ body {
     vertical-align: middle;
 }
 /* / */
+
+h3 {
+  font-size: 20px;
+}
 
 /* index-page */
 .game-page-body {
