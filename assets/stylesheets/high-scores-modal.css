@@ -1,0 +1,88 @@
+.high-scores-modal {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.high-scores-display-div {
+  height: 450px;
+  width: 500px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background: white;
+}
+
+
+.high-scores-display-div h3, .high-scores-display-div h4 {
+  font-family: 'Capriola', sans-serif;
+  margin-bottom: 15px;
+}
+
+.high-scores-display-div h3 {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.high-scores-display-div h4 {
+  font-size: 20px;
+}
+
+.high-scores-display-div section {
+  /* border: 1px solid; */
+  margin: 0px 15px;
+}
+
+.high-scores-display-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.high-scores-display-content ul {
+  font-family: 'Capriola', sans-serif;
+}
+
+.high-scores-display-content section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.high-scores-submit {
+  border: 1px solid;
+  border-radius: 5px;
+  height: 300px;
+  width: 350px;
+  background: white;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.high-scores-submit h3 {
+  font-family: 'Capriola', sans-serif;
+}
+
+.final-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-score p {
+  font-size: 20px;
+}

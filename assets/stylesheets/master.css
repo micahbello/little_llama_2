@@ -72,10 +72,12 @@ h3 {
   display: none;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid;
   border-radius: 5px;
   background: gainsboro;
   padding: 10px 0px;
+  min-height: 222px;
 }
 
 .current-stats-section li {
@@ -130,6 +132,9 @@ h3 {
 .canvas-section {
   height: 450px;
   width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 canvas {
@@ -222,7 +227,7 @@ canvas {
   justify-content: center;
   align-items: center;
   width: 299px;
-  height: 452px;
+  height: 458px;
   margin-left: 4px;
 }
 
@@ -341,7 +346,7 @@ canvas {
   flex-direction: column;
 }
 
-.left-panel-buttons button {
+.left-panel-buttons button, .high-scores-button, #save-score-button {
   width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -357,7 +362,7 @@ canvas {
   cursor: pointer;
 }
 
-.left-panel-buttons button:hover {
+.left-panel-buttons button:hover, .high-scores-button:hover, #save-score-button:hover {
   background: lightgrey;
 }
 

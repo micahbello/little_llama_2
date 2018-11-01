@@ -5,18 +5,13 @@
     <link rel="stylesheet" href="./assets/stylesheets/reset.css">
     <link rel="stylesheet" href="./assets/stylesheets/master.css">
     <link rel="stylesheet" href="./assets/stylesheets/how-to-play-modal.css">
+    <link rel="stylesheet" href="./assets/stylesheets/high-scores-modal.css">
     <link rel="stylesheet" href="./assets/stylesheets/animations.css">
-
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Baloo+Bhaina|Bowlby+One+SC|Capriola|Caveat+Brush|Fascinate+Inline|Gochi+Hand|Palanquin+Dark|Rammetto+One|Righteous|Sigmar+One" rel="stylesheet">
-
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
     <link rel="icon" href="./assets/page_images/single_llama_dressed.png">
-
-
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script> -->
-    <!-- <script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script>
       // Initialize Firebase
       var config = {
         apiKey: "AIzaSyA__9fBXN-yION7dqOfWVjg1AbDPUYqKqI",
@@ -27,7 +22,7 @@
         messagingSenderId: "713125961064"
       };
       firebase.initializeApp(config);
-    </script> -->
+    </script>
 
     <title>Little Llama 2</title>
   </head>
@@ -110,7 +105,7 @@
         </div>
 
         <canvas id="canvas"></canvas>
-        <div class="canvas-cover">
+        <div id="canvas-cover" class="canvas-cover">
           <span class="choose-mode-text"></span>
 
           <div class="mode-buttons-div">
@@ -130,6 +125,33 @@
           </div>
 
         </div>
+
+
+        <!-- Game Over/scores submit -->
+        <div id="game-over-display" class="high-scores-submit">
+          <h3>Game Over</h3>
+          <section class="final-score">
+
+            <p>
+              You obtained <span id="final-coin-count"></span> coin(s) in <span id="mode-played"></span> Mode.
+
+              <span id="new-high-score-tetx">This is a new high score! You can type your name and click the
+                submit button to immortalize your accomplishment.
+              </span>
+
+            </p>
+
+
+            <label>Your Name:
+              <input id="name-to-save" maxlength="15" type="text" name="Name" value="">
+            </label>
+
+            <button id="save-score-button" type="button" name="button">SUBMIT SCORE</button>
+          </section>
+
+          <span>Press 'ENTER' to replay in the same mode or click on the RESTART button on the left</span>
+        </div>
+
 
       </div>
 
@@ -164,6 +186,7 @@
           <figure>
             <img src="./assets/sprites/other_objects/coin_icon.png" alt="">
           </figure>
+
           <h3>Quick Tips</h3>
 
             <figure>
@@ -174,6 +197,8 @@
 
 
         </div>
+
+        <button id="high-scores-button" class="high-scores-button" type="button" name="button">View High Scores</button>
 
       </section>
 
@@ -189,7 +214,36 @@
       <span>beautifully coded by Miqueas Bello</span>
     </footer>
 
-<!-- modal -->
+<!-- high scores modal -->
+
+    <div id="high-scores-modal" class="high-scores-modal">
+
+          <!-- scores display -->
+          <div class="high-scores-display-div">
+              <h3>The Hungriest Llamas Out There</h3>
+              <section class="high-scores-display-content">
+                <section>
+                  <h4>Normal Mode</h4>
+
+                  <ul id="normal-high-scores">
+                  </ul>
+                </section>
+
+                <section>
+
+                  <h4>Flight Mode</h4>
+
+                  <ul id="flight-high-scores">
+                  </ul>
+                </section>
+              </section>
+
+              <button id="high-scores-close-button" type="button" name="button">Close</button>
+          </div>
+
+    </div>
+
+<!-- how to modal -->
     <div id="how-to-modal" class="how-to-play-modal">
 
 <!-- slide1 -->
@@ -322,5 +376,6 @@
 <!-- modal -->
 
     <script src="./lib/bundle.js" charset="utf-8"></script>
+    <script src="./lib/scores_related.js" charset="utf-8"></script>
   </body>
 </html>
