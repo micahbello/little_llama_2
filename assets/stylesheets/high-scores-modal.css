@@ -13,7 +13,7 @@
 
 
 .high-scores-display-div {
-  height: 450px;
+  height: 495px;
   width: 500px;
   position: absolute;
   display: flex;
@@ -24,7 +24,14 @@
 }
 
 
-.high-scores-display-div h3, .high-scores-display-div h4 {
+.high-scores-display-div h3 {
+  font-family: 'Rammetto One', cursive;
+  margin-bottom: 15px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.high-scores-display-div h4 {
   font-family: 'Capriola', sans-serif;
   margin-bottom: 15px;
 }
@@ -35,7 +42,7 @@
 }
 
 .high-scores-display-div h4 {
-  font-size: 20px;
+  font-size: 27px;
 }
 
 .high-scores-display-div section {
@@ -46,11 +53,17 @@
 .high-scores-display-content {
   display: flex;
   flex-direction: row;
+  min-height: 310px;
 }
 
 .high-scores-display-content ul {
   font-family: 'Capriola', sans-serif;
 }
+
+.high-scores-display-content ul li {
+  margin-bottom: 10px;
+}
+
 
 .high-scores-display-content section {
   display: flex;
@@ -63,17 +76,23 @@
   border: 1px solid;
   border-radius: 5px;
   height: 300px;
-  width: 350px;
+  width: 400px;
   background: white;
   display: none;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   position: absolute;
+  font-family: 'Capriola', sans-serif;
 }
 
 .high-scores-submit h3 {
   font-family: 'Capriola', sans-serif;
+}
+
+.high-scores-submit span {
+  margin: 0px 10px;
+  text-align: center;
 }
 
 .final-score {
@@ -89,4 +108,48 @@
 
 #score-save-section {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 22px;
+}
+
+#score-save-section label {
+  margin: 10px 0px;
+}
+
+.enter-restart-text {
+  margin: 0px 10px;
+}
+
+#high-scores-close-button {
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Baloo Bhaina', cursive;
+  background: #99ddff;
+  width: 35%
+}
+
+#high-scores-close-button:hover {
+  background: gainsboro;
+}
+
+#save-score-button {
+  background: #99ddff;
+}
+
+#save-score-button:hover {
+  background: gainsboro;
+}
+
+#final-coin-count {
+  font-size: 24px;
+  margin: 0px;
+}
+
+#mode-played {
+  margin: 0px;
 }
