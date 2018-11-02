@@ -86,3 +86,7 @@
 .final-score p {
   font-size: 20px;
 }
+
+#score-save-section {
+  display: none;
+}

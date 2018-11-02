@@ -132,21 +132,22 @@
           <h3>Game Over</h3>
           <section class="final-score">
 
-            <p>
+            <span>
               You obtained <span id="final-coin-count"></span> coin(s) in <span id="mode-played"></span> Mode.
+            </span>
 
+            <section id="score-save-section">
               <span id="new-high-score-tetx">This is a new high score! You can type your name and click the
                 submit button to immortalize your accomplishment.
               </span>
 
-            </p>
+              <label>Your Name:
+                <input id="name-to-save" maxlength="15" type="text" name="Name" value="">
+              </label>
 
+              <button id="save-score-button" type="button" name="button">SUBMIT SCORE</button>
+            </section>
 
-            <label>Your Name:
-              <input id="name-to-save" maxlength="15" type="text" name="Name" value="">
-            </label>
-
-            <button id="save-score-button" type="button" name="button">SUBMIT SCORE</button>
           </section>
 
           <span>Press 'ENTER' to replay in the same mode or click on the RESTART button on the left</span>
