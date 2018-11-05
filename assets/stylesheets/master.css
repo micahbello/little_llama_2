@@ -325,7 +325,6 @@ canvas {
 }
 
 
-
 .normal-mode-link-and-llama {
   margin-top: 3px;
 }
@@ -460,4 +459,12 @@ canvas {
   color: black;
   font-size: 17px;
   font-family: 'Capriola', sans-serif;
+}
+
+.paused-game-display {
+  display: none;
+  z-index: 4;
+  font-family: 'Capriola', sans-serif;
+  font-size: 20px;
+  margin-top: 60px;
 }
