@@ -18,6 +18,10 @@
   padding-top: 20px;
 }
 
+.slides-weapons-header {
+  margin-top: -20px;
+}
+
 .how-slide {
   position: absolute;
   width: 560px;
